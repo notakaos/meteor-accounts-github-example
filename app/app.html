@@ -1,0 +1,20 @@
+<head>
+  <title>app</title>
+</head>
+
+<body>
+  {{> hello}}
+</body>
+
+<template name="hello">
+  {{#if currentUser}}
+    <h1>{{currentUser.profile.name}}, Welcome!</h1>
+  {{else}}
+    <h1>Welcome to Meteor!</h1>
+  {{/if}}
+
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+
+  {{> loginButtons}}
+</template>
