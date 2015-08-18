@@ -9,6 +9,7 @@
 <template name="hello">
   {{#if currentUser}}
     <h1>{{currentUser.profile.name}}, Welcome!</h1>
+    <h2>Email: {{currentUser.profile.email}}</h2>
   {{else}}
     <h1>Welcome to Meteor!</h1>
   {{/if}}

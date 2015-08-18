@@ -54,5 +54,6 @@ app.html
 meteor create app
 cd app
 meteor add accounts-ui accounts-github
+meteor add bruz:github-api
 ```
 
